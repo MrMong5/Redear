@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Pangolin-Regular";
+    src: url("../fonts/Pangolin/Pangolin-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Pangolin-Regular";
+}
+
+/*shapka*/
+
+header{
+    height: 100vh;
+    background-image: url("../images/дополнительно/360850-svetik_2560x1600.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    background-color: darkblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img, nav img{
+    width: 10%;
+}
+
+.logo{
+    text-align: center;
+}
+
+header h2{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 1em;
+    color: brown;
+    display: block;
+}
+
+nav a.active{
+    background-color: yellow;
+}
+
+/*order*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    padding: 2em 0;
+}
+
+.order{
+    margin: auto;
+    text-align: center;
+    border: black solid 1px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.order img{
+    width: 50%;
+}
+
+.cat{
+    background-color: chocolate;
+    border-radius: 5px;
+}
+
+/*dangeon*/
+
+footer{
+    height: 200px;
+    background-color: darkblue;
+}
+
+/*singup form*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20vw;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+input, select, textarea, button{
+    margin: 10px 0;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+/*Заявы*/
+
+table{
+    width: 50%;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav a{
+        padding: 1.5em 5px;
+    }
+
+    form{
+        width: 90vw;
+        padding: 1em;
+    }
+
+    table{
+        width: 80%;
+        font-size: 1.2em;
+    }
+
+    table select{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design-Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="admin.html" class="active">Администрирование</a>
+        <a href="lk.html">Личный кабинет</a>
+        <a href="signin.html">Войти</a>
+        <a href="signup.html">Регистрация</a>
+        <a href="#">Выход</a>
+    </nav>
+    <h2>Мои заявки</h2>
+    <table>
+        <tr>
+            <th>№</th>
+            <th>Дата</th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Категория</th>
+            <th>Статус</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>28.04.2022</td>
+            <td>Заява 1</td>
+            <td>Описание 1</td>
+            <td>Категория 1</td>
+            <td>
+                <select>
+                    <option>Новая</option>
+                    <option>Принято в работу</option>
+                    <option>Выполнено</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>29.04.2022</td>
+            <td>Заява 2</td>
+            <td>Описание 2</td>
+            <td>Категория 3</td>
+            <td>
+                <select>
+                    <option>Новая</option>
+                    <option>Принято в работу</option>
+                    <option>Выполнено</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>30.04.2022</td>
+            <td>Заява 3</td>
+            <td>Описание 3</td>
+            <td>Категория 3</td>
+            <td>
+                <select>
+                    <option>Новая</option>
+                    <option>Принято в работу</option>
+                    <option>Выполнено</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <h2>Категории заявок</h2>
+    <table>
+        <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Категория 1</td>
+            <td>Удалить</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Категория 2</td>
+            <td>Удалить</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Категория 3</td>
+            <td>Удалить</td>
+        </tr>
+    </table>
+    <input type="text" placeholder="Название категории">
+    <button>Добавить</button>
+</body>
+
+</html>
